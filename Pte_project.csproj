@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05BD2F15-85F0-478A-9C95-F40206875566}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pte_project</RootNamespace>
+    <AssemblyName>Pte_project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Pte_project.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Answer_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Answer_form.Designer.cs">
+      <DependentUpon>Answer_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Answer_key.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Answer_key.Designer.cs">
+      <DependentUpon>Answer_key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dayplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dayplan.Designer.cs">
+      <DependentUpon>Dayplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del_form.Designer.cs">
+      <DependentUpon>Del_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_for_dynamic_connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_for_dynamic_connection.Designer.cs">
+      <DependentUpon>Form_for_dynamic_connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listening_questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listening_questions.Designer.cs">
+      <DependentUpon>Listening_questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lst_box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lst_box.Designer.cs">
+      <DependentUpon>Lst_box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_page.Designer.cs">
+      <DependentUpon>Main_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pte_connection.cs" />
+    <Compile Include="ReadingQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadingQuestions.Designer.cs">
+      <DependentUpon>ReadingQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Speaking_Questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Speaking_Questions.Designer.cs">
+      <DependentUpon>Speaking_Questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WritingQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WritingQuestions.Designer.cs">
+      <DependentUpon>WritingQuestions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Answer_form.resx">
+      <DependentUpon>Answer_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Answer_key.resx">
+      <DependentUpon>Answer_key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dayplan.resx">
+      <DependentUpon>Dayplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del_form.resx">
+      <DependentUpon>Del_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_for_dynamic_connection.resx">
+      <DependentUpon>Form_for_dynamic_connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listening_questions.resx">
+      <DependentUpon>Listening_questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lst_box.resx">
+      <DependentUpon>Lst_box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_page.resx">
+      <DependentUpon>Main_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReadingQuestions.resx">
+      <DependentUpon>ReadingQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Speaking_Questions.resx">
+      <DependentUpon>Speaking_Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WritingQuestions.resx">
+      <DependentUpon>WritingQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
